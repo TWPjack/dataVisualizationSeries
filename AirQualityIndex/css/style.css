@@ -12,6 +12,8 @@ body {
           flex-direction: column;
   font-family: sans-serif;
   font-weight: 800;
+  min-height: 100%;
+  background-color: antiquewhite;
 }
 
 html .header,
@@ -22,16 +24,32 @@ body .header {
   background-color: aquamarine;
 }
 
+html .header input,
+body .header input {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #26c000;
+  color: #4b2b01;
+  border-radius: 0.3rem;
+}
+
 html .body,
 body .body {
   padding: 0.5rem;
-  height: 600px;
   background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 html .body table,
 body .body table {
-  width: 100%;
   border: 1px solid black;
 }
 
@@ -55,11 +73,4 @@ body .body table tr td {
   border: 3px solid #6d0000;
   text-align: center;
   padding: 0.5rem;
-}
-
-html .footer,
-body .footer {
-  padding: 0.5rem;
-  height: 50px;
-  background-color: #4b2b01;
 }
