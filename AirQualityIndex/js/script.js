@@ -16,6 +16,7 @@ $('.countybutton').click(function () {
                 <td>${response.records[recordsIndex].Status}</td>
                 <td>${response.records[recordsIndex].O3}</td>
                 <td>${response.records[recordsIndex].PM10}</td>
+                <td>${response.records[recordsIndex]['PM2.5']}</td>
                 <td>${response.records[recordsIndex].CO}</td>
                 <td>${response.records[recordsIndex].SO2}</td>
                 <td>${response.records[recordsIndex].NO2}</td>
