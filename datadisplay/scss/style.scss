@@ -1,0 +1,40 @@
+html,
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: 800;
+  background-color: antiquewhite;
+  height: 100vh;
+  .header {
+    padding: 0.5rem;
+    height: 10vh;
+    text-align: center;
+    background-color: rgb(255, 229, 143);
+  }
+
+  .body {
+    position: relative;
+    height: 80vh;
+    background-color: rgb(255, 222, 178);
+    display: flex;
+    justify-content: center;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    .chart-container{
+      position: relative;
+      width: 80vw;
+      height: 70vh;
+      canvas {
+        border: 1px dotted red;
+      }
+    }
+  }
+
+  .footer {
+    height: 10vh;
+    background-color: rgba(75, 43, 1, .5);
+    z-index: 5;
+  }
+}
